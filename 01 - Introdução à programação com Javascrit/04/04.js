@@ -22,9 +22,30 @@ Exemplo:
         Trem Fantasma : Liberado
         Carrossel : Liberado
 */
-function calculaAltura(){
 
+
+function calculaAltura(altura) {
+  const brinquedos = {
+    "Montanha-Russa": 1.6,
+    "Roda Gigante": 1.5,
+    "Carrinho bate-bate": 1.4,
+    "Trem fantasma": 1.3,
+    Carrosel: 0,
+  };
+  let resp = "";
+  let i = 0;
+
+  while (i < Object.keys(brinquedos).length) {
+    if (altura > brinquedos[Object.keys(brinquedos)[i]]) {
+      resp = resp + `${Object.keys(brinquedos)[i]}: Liberado \n`;
+    } else {
+      resp = resp + `${Object.keys(brinquedos)[i]}: Não pode entrar \n`;
+    }
+    i++;
+  }
+  return resp;
 }
+
 
 /* Questão 02
 
@@ -38,7 +59,18 @@ Lembrando que um cliente paga meia se for maior de 65 anos, ou menor de 21 anos,
 Tente prever também condições absurdas, como uma pessoa e 65 anos estudante.
 */
 
-function meiaCinema() {
+function meiaCinema(idade, carteira, diaSemana) {
+  if (diaSemana.toLowerCase() === "segunda-feira"){
+    return 'Você tem direito a meia entrada!'
+  }else if (idade < 21 || idade >= 65) {
+    if (idade >= 65 || carteira) {
+        return "Você é um estudante idoso!"
+      }
+    return 'Você tem direito a meia entrada pela idade!'
+    
+  } else if (carteira) {
+    return "Estudante com carteira paga meia entrada!"
+  }
 
 }
 
@@ -65,9 +97,15 @@ Para gerar um número aleatório entre 1 e 10, utilize o seguinte código
 Math.floor(Math.random() * 10) + 1
 */
 
-function adivinha(){
-
-}
+function adivinha(num) {
+    let numAleatorio = Math.floor(Math.random() * 10) + 1
+    if (num === numAleatorio) {
+      return "Você acertou, o número era: " + numAleatorio
+    } else {
+       return "Você errou, o número era: " + numAleatorio
+    }
+  
+  }
 
 /* Questão 04
 
@@ -86,9 +124,36 @@ Saída : Os números não estão entre 40 e 60
 
 */
 
-function calculaMaior(){
-    
-}
+function calculaMaior(numA, numB) {
+    let maior = 0;
+    let string = "e o maior deles é"
+  
+  
+    if (numA >= 40 && numA <= 60 && numB >= 40 && numB <= 60) {
+      if (numA > numB) {
+        maior = numA
+        return `Os números estão entre 40 e 60, ${string} ${maior}`
+  
+      } else if (numA === numB) {
+        return `Os números estão entre 40 e 60, e os dois números são iguais `
+      } else {
+        maior = numB
+        return `Os números estão entre 40 e 60, ${string} ${maior}`
+      }
+    } else {
+      if (numA > numB) {
+        maior = numA
+        return `Os números não estão entre 40 e 60, ${string} ${maior}`
+  
+      } else if (numA === numB) {
+        return `Os números estão entre 40 e 60, e os dois números são iguais `
+      } else {
+        maior = numB
+        return `Os números não estão entre 40 e 60`
+      }
+    }
+  
+  }
 
 /* Desafio
 
@@ -115,6 +180,28 @@ cada minuto com 60 segundos
 
 */
 
-function idadePlaneta() {
+function idadePlaneta(idadeSegundos) {
+    const planetas = {
+      "Mercurio": 0.2,
+      "Venus": 0.6,
+      "Terra": 1,
+      "Marte": 1.88,
+      "Jupiter": 11.86,
+      "Saturno": 29.44,
+      "Urãno": 84,
+      "Netuno": 164.79,
+    };
+    // 788940000 = 25 anos
+    const idadeAnos = Math.floor(idadeSegundos / 31557600)
+    let resposta = "";
+    let i = 0;
 
-}
+    while (i < Object.keys(planetas).length) {
+     let idade = Object.values(planetas)[i] * idadeAnos
+      resposta =  resposta + `Vocë teria ${idade} anos em ${Object.keys(planetas)[i]} \n`
+     i++ } 
+    
+    console.log (resposta)
+    return "fim"
+    }
+  
