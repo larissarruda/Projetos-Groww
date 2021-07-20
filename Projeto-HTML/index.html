@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar container-fluid navbar-expand-lg navbar-light row">
+                    <a class="navbar-brand col" id="logo" href="./index.html">LA SHOPPA</a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">MEN</a>
+                            <a class="nav-link" href="#">WOMEN</a>
+                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="#">SUPPORT</a>
+                        </div>
+                        <div class="d-flex flex-row-reverse col-6" id="cart">
+                            <button type="button" class="btn btn-outline-secondary">  <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>  </button>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <header>
+            <div class="banner">
+                <img src="./images/header2.jpg" id ="bannerPic" alt="">
+                <div class="row" id="bannerText">
+                    <div class = "col-sm-8"> 
+                        <h1 id="titulo">NEW SEASON ARRIVALS.</h1>
+                        <h2 id="sub-titulo">CHECK OUT ALL THE NEW TRENDS</h2>
+                    </div>
+                    <div class = "col-sm-4"><!-- 
+                    <button type="button" class="btn btn-light btn-lg" id="shop-now"> SHOP NOW </button> -->
+                    <span class="btn btn-light btn-lg" id="shop-now"> <a id="loginBt" href="./login.html"> SHOP NOW</a> </span>  
+                    </div> 
+                </div>
+            </div>
+            </div>
+            
+        </header>
+    </main>
+    <div class="container-fluid">
+        <section class="content">
+
+            <div class="row">
+                <h3 class="row justify-content-md-center" id="divisao">LATEST PRODUCTS</h3>
+                <hr class='line'>
+                <div class="card" id="produto">
+                    <img src="./images/product1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">SUNT OFFICIA SED DESERUNT.</p>
+                        <p class="card-text">$150.00</p>
+                    </div>
+                </div>
+                <div class="card" id="produto">
+                    <img src="./images/product2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">DUIS AUTE IRURE DOLOR.</p>
+                        <p class="card-text">$650.00</p>
+                    </div>
+                </div>
+                <div class="card" id="produto">
+                    <img src="./images/product3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">CONSECTETUR EIUSMOD ELIT.</p>
+                        <p class="card-text">$100.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="row justify-content-md-center" id="divisao">POPULAR PRODUCTS</h3>
+                <hr class='line'>
+                <div class="card" id="produto">
+                    <img src="./images/product4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">DOLORE EU NULLA PARIATUR.</p>
+                        <p class="card-text">$120.00</p>
+                    </div>
+                </div>
+                <div class="card" id="produto">
+                    <img src="./images/product5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">ENIM AD MINIM VENIAM.</p>
+                        <p class="card-text">$1000.00</p>
+                    </div>
+                </div>
+                <div class="card" id="produto">
+                    <img src="./images/product6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">EXCEPTEUR SINT CUPIDATAT.</p>
+                        <p class="card-text">$340.00</p>
+                    </div>
+                </div>
+                <hr class='line'>
+            </div>
+
+        </section>
+
+        <footer id="about">
+            <div>
+                <div class="row">
+                    <div class="col-4">
+                        <h5>Our Stores</h5>
+                        <p>1401 South Grand Avenue <br>
+                            Los Angeles, CA 90015 <br>
+                            <b>(213) 748-2411 </b>
+                        </p>
+                        <p>100 Fairview Drive <br>
+                            Franklin, VA 23851 <br>
+                            <b>(757) 569-6100</b>
+                        </p>
+
+                    </div>
+                    <div class="col-4">
+                        <h5>Blog Posts</h5>
+                        <h6>Duis aute irure dolor in reprehenderit.</h6>
+                        <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <h6>Ut enim ad minim veniam. </h6>
+                        <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <h6>oficcia deserunt mollit consectetur.</h6>
+                        <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="col-4">
+                        <h5>Support</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Terms & Conditions</li>
+                                    <li>FAQ</li>
+                                    <li>Payment</li>
+                                    <li>Refunds </li>
+                                    <li>Track Order</li>
+                                    <li>Services</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Services </li>
+                                    <li>Press</li>
+                                    <li>Blog</li>
+                                    <li>About Us</li>
+                                    <li>Contact Us</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <footer id="copy">
+            <p>&copy; 2014 lashoopa.com - All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
